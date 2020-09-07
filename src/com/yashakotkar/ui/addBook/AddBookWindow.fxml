@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainContainer" prefHeight="275.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashakotkar.ui.addBook.AddBookWindowController">
+    <VBox layoutX="250.0" layoutY="71.0" prefHeight="291.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <TextField fx:id="title" promptText="Book Title">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+            </VBox.margin>
+        </TextField>
+        <TextField fx:id="id" layoutX="20.0" layoutY="30.0" promptText="Book Id">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </TextField>
+        <TextField fx:id="author" layoutX="10.0" layoutY="55.0" promptText="Book Author">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </TextField>
+        <TextField fx:id="publisher" layoutX="10.0" layoutY="80.0" promptText="Book Publisher">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </TextField>
+        <TextField fx:id="quantity" layoutX="20.0" layoutY="165.0" promptText="Book Quantity">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </TextField>
+        <HBox prefHeight="40.0" prefWidth="600.0">
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#AddBook" prefHeight="50.0" prefWidth="200.0" styleClass="optionButton" stylesheets="@AddBook.css" text="Save">
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            <font>
+               <Font size="20.0" />
+            </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#closeDialog" prefHeight="50.0" prefWidth="200.0" styleClass="optionButton" stylesheets="@AddBook.css" text="Cancel" textAlignment="JUSTIFY">
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            <font>
+               <Font size="20.0" />
+            </font>
+            </Button>
+        </HBox>
+    </VBox>
+</AnchorPane>

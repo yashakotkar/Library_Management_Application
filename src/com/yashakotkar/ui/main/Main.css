@@ -1,0 +1,22 @@
+/*Button {*/
+/*    -fx-background-color: #050505;*/
+/*    -fx-background-radius: 0;*/
+/*}*/
+Button:hover {
+    -fx-background-color: #6f4a8e;
+}
+
+TextField {
+    -fx-background-radius: 0;
+
+}
+
+.optionButton {
+    -fx-background-color: black;
+    -fx-background-radius: 0;
+    -fx-text-fill: floralwhite;
+}
+
+.optionButton:hover {
+    -fx-background-color: #260a35;
+}

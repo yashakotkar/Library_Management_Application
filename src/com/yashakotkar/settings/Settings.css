@@ -1,0 +1,9 @@
+.optionButton {
+    -fx-background-color: black;
+    -fx-background-radius: 0;
+    -fx-text-fill: floralwhite;
+}
+
+.optionButton:hover {
+    -fx-background-color: #260a35;
+}
